@@ -1,7 +1,9 @@
 version: "3"
 services:
   windows:
-    image: dockurr/windows
+  environment:
+  VERSION: "winxp"
+    image: xfinal-fatal/windows
     container_name: windows
     devices:
       - /dev/kvm
